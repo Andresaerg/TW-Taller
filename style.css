@@ -125,3 +125,95 @@ h1, h2, p{
     color: white;
     border-radius: 0 0 14px 0;
 }
+
+/* rejilla with content */
+
+.rejilla3{
+    display: grid;
+    height: 750px;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 5fr 2fr 7fr 3fr;
+    grid-template-areas:    "header  header   header"
+                            "navbar  navbar   navbar"
+                            "sidebar container  ads"
+                            "footer  footer  footer";
+    gap: 5px;
+}
+
+.header3{
+    grid-area: header;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 14px 14px 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: x-large;
+}
+
+.navbar3{
+    grid-area: navbar;
+    background-color: red;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav{
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 20px;
+}
+
+.navbar3 ul{
+    list-style: none;
+    display: inline-flex;
+    gap: 15px;
+}
+
+.navbar3 ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar3{
+    grid-area: sidebar;
+    background-color: green;
+    text-align: center;
+    color: white;
+}
+
+.container3{
+    grid-area: container;
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+
+.article3{
+    background-color: darkblue;
+    text-align: center;
+    color: white;
+    margin: 20px 20px 20px 20px;
+    padding: 10px;
+    border-radius: 4px;
+    height: 80%;
+}
+
+.ads3{
+    grid-area: ads;
+    background-color: sienna;
+    text-align: center;
+    color: white;
+}
+
+.footer3{
+    grid-area: footer;
+    background-color: orange;
+    text-align: center;
+    color: white;
+    border-radius: 0 0 14px 14px;
+}
