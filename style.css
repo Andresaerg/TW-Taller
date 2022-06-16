@@ -1,0 +1,127 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(45deg, white, lightgrey);
+    min-height: 950px;
+}
+
+h1, h2, p{
+    text-align: center;
+}
+
+.rejilla1{
+    display: grid;
+    height: 750px;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 5fr 2fr 15fr 3fr;
+    grid-template-areas:    "header  header   header"
+                            "navbar  navbar   navbar"
+                            "sidebar container  ads"
+                            "footer  footer  footer";
+    gap: 5px;
+}
+
+.header1{
+    grid-area: header;
+    background-color: rebeccapurple;
+    text-align: center;
+    color: white;
+    border-radius: 14px 14px 0 0;
+}
+
+.navbar1{
+    grid-area: navbar;
+    background-color: red;
+    text-align: center;
+    color: white;
+}
+
+.sidebar1{
+    grid-area: sidebar;
+    background-color: green;
+    text-align: center;
+    color: white;
+}
+
+.container1{
+    grid-area: container;
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+
+.article1{
+    background-color: darkblue;
+    text-align: center;
+    color: white;
+    margin: 20px 20px 20px 20px;
+    padding: 10px;
+    border-radius: 4px;
+    height: 80%;
+}
+
+.ads1{
+    grid-area: ads;
+    background-color: sienna;
+    text-align: center;
+    color: white;
+}
+
+.footer1{
+    grid-area: footer;
+    background-color: orange;
+    text-align: center;
+    color: white;
+    border-radius: 0 0 14px 14px;
+}
+
+.rejilla2{
+    display: grid;
+    height: 250px;
+    grid-template-columns: 0.5fr 2fr 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.5fr;
+    grid-template-areas:    "sidebar header navbar"
+                            "sidebar container sidebar2"
+                            "sidebar container sidebar2";
+    gap: 5px;
+}
+
+.header2{
+    grid-area: header;
+    background-color: rebeccapurple;
+    text-align: center;
+    color: white;
+}
+
+.navbar2{
+    grid-area: navbar;
+    background-color: red;
+    text-align: center;
+    color: white;
+    border-radius: 0 14px 0 0;
+}
+
+.container2{
+    grid-area: container;
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+
+.sidebar2{
+    grid-area: sidebar;
+    background-color: green;
+    text-align: center;
+    color: white;
+    border-radius: 14px 0 0 14px;
+}
+
+.sidebar2-1{
+    grid-area: sidebar2;
+    background-color: green;
+    text-align: center;
+    color: white;
+    border-radius: 0 0 14px 0;
+}
